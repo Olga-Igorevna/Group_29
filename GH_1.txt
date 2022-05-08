@@ -308,4 +308,40 @@ $ git fetch
 
 Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
 $
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim GH_1.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git add GH_1.txt
+warning: LF will be replaced by CRLF in GH_1.txt.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   GH_1.txt
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git commit -m "add GH_1.txt"
+[main 954cedc] add GH_1.txt
+ 1 file changed, 311 insertions(+)
+ create mode 100644 GH_1.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.77 KiB | 1.77 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Olga-Igorevna/Group_29.git
+   66b99a0..954cedc  main -> main
+
 
