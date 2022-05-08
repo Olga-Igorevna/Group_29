@@ -1,0 +1,311 @@
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test
+$ git clone https://github.com/Olga-Igorevna/Group_29.git
+Cloning into 'Group_29'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test
+$ cg Group_29
+bash: cg: command not found
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test
+$ cd Group_29
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ ls -la
+total 5
+drwxr-xr-x 1 Olia 197121  0 May  8 11:56 ./
+drwxr-xr-x 1 Olia 197121  0 May  8 11:56 ../
+drwxr-xr-x 1 Olia 197121  0 May  8 12:03 .git/
+-rw-r--r-- 1 Olia 197121 10 May  8 11:56 README.md
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ start
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ start
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim names.json
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ ls- la
+bash: ls-: command not found
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ ls -la
+total 6
+drwxr-xr-x 1 Olia 197121  0 May  8 12:10 ./
+drwxr-xr-x 1 Olia 197121  0 May  8 11:56 ../
+drwxr-xr-x 1 Olia 197121  0 May  8 12:03 .git/
+-rw-r--r-- 1 Olia 197121 10 May  8 11:56 README.md
+-rw-r--r-- 1 Olia 197121 50 May  8 12:10 names.json
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git add names.json
+warning: LF will be replaced by CRLF in names.json.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   names.json
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git commit -m "create names.json"
+[main bd8d4a8] create names.json
+ 1 file changed, 7 insertions(+)
+ create mode 100644 names.json
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git puch
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Olga-Igorevna/Group_29.git
+   a40e751..bd8d4a8  main -> main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim names.json
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git comfig user.name
+git: 'comfig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git config user.name
+Olga-Igorevna
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git add names.json
+warning: LF will be replaced by CRLF in names.json.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git commit -m "add names.json"
+[main eb90d80] add names.json
+ 1 file changed, 1 insertion(+)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Olga-Igorevna/Group_29.git
+   bd8d4a8..eb90d80  main -> main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ ls -la
+total 6
+drwxr-xr-x 1 Olia 197121  0 May  8 12:26 ./
+drwxr-xr-x 1 Olia 197121  0 May  8 11:56 ../
+drwxr-xr-x 1 Olia 197121  0 May  8 12:44 .git/
+-rw-r--r-- 1 Olia 197121 10 May  8 11:56 README.md
+-rw-r--r-- 1 Olia 197121 63 May  8 12:26 names.json
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim names.xml
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim names.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+        names.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim names.json
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git ctatus
+git: 'ctatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+        names.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git add .
+warning: LF will be replaced by CRLF in names.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in names.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in names.xml.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.json
+        new file:   names.txt
+        new file:   names.xml
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git commit -m "add names.txt and names.xml"
+[main b94f428] add names.txt and names.xml
+ 3 files changed, 12 insertions(+), 2 deletions(-)
+ create mode 100644 names.txt
+ create mode 100644 names.xml
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ vim names.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git commit -am "add modified names.txt"
+warning: LF will be replaced by CRLF in names.txt.
+The file will have its original line endings in your working directory
+[main 353dcdb] add modified names.txt
+ 1 file changed, 1 insertion(+)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 765 bytes | 765.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Olga-Igorevna/Group_29.git
+   eb90d80..353dcdb  main -> main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 725 bytes | 60.00 KiB/s, done.
+From https://github.com/Olga-Igorevna/Group_29
+   353dcdb..66b99a0  main       -> origin/main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git pull
+Updating 353dcdb..66b99a0
+Fast-forward
+ names.json | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$ git fetch
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git test/Group_29 (main)
+$
+
