@@ -1,0 +1,457 @@
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git branch
+* main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git branch apple_pay
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git branch
+  apple_pay
+* main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git checkout apple_pay
+Switched to branch 'apple_pay'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ touch phone.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ vim phone.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git add .
+warning: LF will be replaced by CRLF in phone.txt.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git commit -m "add phones"
+[apple_pay 471f7fb] add phones
+ 1 file changed, 2 insertions(+)
+ create mode 100644 phone.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git checkout -b statistics
+Switched to a new branch 'statistics'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git branch
+  apple_pay
+  main
+* statistics
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ touch orders.csv
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ touch calcs.py
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git add .
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git commit -m "add stat"
+[statistics 40e02bd] add stat
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 calcs.py
+ create mode 100644 orders.csv
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git checkout apple_pay
+Switched to branch 'apple_pay'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git merge apple_pay
+Updating e5836f5..471f7fb
+Fast-forward
+ phone.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 phone.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git merge statistics
+Merge made by the 'ort' strategy.
+ calcs.py   | 0
+ orders.csv | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 calcs.py
+ create mode 100644 orders.csv
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git checkout apple_pay
+Switched to branch 'apple_pay'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ touch bill.gs
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git add .
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git commit -m "add bill"
+[apple_pay e6362f8] add bill
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bill.gs
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout statistics
+Switched to branch 'statistics'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ touch seasons.js
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git add .
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git commit -m "add seasons"
+[statistics 6203513] add seasons
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 seasons.js
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git merge statistics
+Merge made by the 'ort' strategy.
+ seasons.js | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 seasons.js
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git merge apple_pay
+Merge made by the 'ort' strategy.
+ bill.gs | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bill.gs
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git checkout statistics
+Switched to branch 'statistics'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ touch mlmodel.py
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git add .
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git commit -M "add mlmodel"
+error: unknown switch `M'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git commit -m "add mlmodel"
+[statistics f0508d8] add mlmodel
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mlmodel.py
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (statistics)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git merge statistics -m "add ml"
+Merge made by the 'ort' strategy.
+ mlmodel.py | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mlmodel.py
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ ls -la
+total 37
+drwxr-xr-x 1 Olia 197121     0 May  9 15:31 ./
+drwxr-xr-x 1 Olia 197121     0 May  9 13:04 ../
+drwxr-xr-x 1 Olia 197121     0 May  9 15:31 .git/
+-rw-r--r-- 1 Olia 197121 13012 May  9 13:15 GH_1.txt
+-rw-r--r-- 1 Olia 197121  7456 May  9 13:03 GitHub_HW_1.txt
+-rw-r--r-- 1 Olia 197121    10 May  8 11:56 README.md
+-rw-r--r-- 1 Olia 197121     0 May  9 15:31 bill.gs
+-rw-r--r-- 1 Olia 197121     0 May  9 15:25 calcs.py
+-rw-r--r-- 1 Olia 197121     0 May  9 15:31 mlmodel.py
+-rw-r--r-- 1 Olia 197121   118 May  8 13:09 names.json
+-rw-r--r-- 1 Olia 197121    44 May  8 13:02 names.txt
+-rw-r--r-- 1 Olia 197121    68 May  8 17:34 names.xml
+-rw-r--r-- 1 Olia 197121     0 May  9 15:25 orders.csv
+-rw-r--r-- 1 Olia 197121    28 May  9 15:31 phone.txt
+-rw-r--r-- 1 Olia 197121     0 May  9 15:27 seasons.js
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ cat >> phones.txt
+3) Xiaomi p20
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git commit -am "add Xiaomi"
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        phones.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git add .
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   phones.txt
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git commit -m "Xiaomi"
+[main 79b0da8] Xiaomi
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ > cat phones.txt
+bash: phones.txt: command not found
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ >cat phones.txt
+bash: phones.txt: command not found
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ cat phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git checkout apple_pay
+Switched to branch 'apple_pay'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ vim phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git commit -am "add samsung"
+On branch apple_pay
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cat
+        phones.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ vim phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git main
+git: 'main' is not a git command. See 'git --help'.
+
+The most similar command is
+        mailinfo
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout main
+error: The following untracked working tree files would be overwritten by checkout:
+        phones.txt
+Please move or remove them before you switch branches.
+Aborting
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ rm phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ vim phone.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git commit -am "add sumsung"
+[apple_pay 595e7e2] add sumsung
+ 1 file changed, 1 insertion(+)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 10 commits.
+  (use "git push" to publish your local commits)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git merge apple_pay -m "add samsung"
+Merge made by the 'ort' strategy.
+ phone.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git push -u origin apple_pay
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 754 bytes | 754.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'apple_pay' on GitHub by visiting:
+remote:      https://github.com/Olga-Igorevna/Group_29/pull/new/apple_pay
+remote:
+To https://github.com/Olga-Igorevna/Group_29.git
+ * [new branch]      apple_pay -> apple_pay
+branch 'apple_pay' set up to track 'origin/apple_pay'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git push -u origin statistics
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 670 bytes | 670.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'statistics' on GitHub by visiting:
+remote:      https://github.com/Olga-Igorevna/Group_29/pull/new/statistics
+remote:
+To https://github.com/Olga-Igorevna/Group_29.git
+ * [new branch]      statistics -> statistics
+branch 'statistics' set up to track 'origin/statistics'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git checkout apple_pay
+Switched to branch 'apple_pay'
+Your branch is up to date with 'origin/apple_pay'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ vim phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ vim phone.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git commit -am "add Oppo"
+[apple_pay 7914981] add Oppo
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Olga-Igorevna/Group_29.git
+   595e7e2..7914981  apple_pay -> apple_pay
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout main
+error: The following untracked working tree files would be overwritten by checkout:
+        phones.txt
+Please move or remove them before you switch branches.
+Aborting
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ rm phones.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (apple_pay)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 12 commits.
+  (use "git push" to publish your local commits)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git fetch
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.32 KiB | 168.00 KiB/s, done.
+From https://github.com/Olga-Igorevna/Group_29
+   e5836f5..ce6aec2  main       -> origin/main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git pull
+Merge made by the 'ort' strategy.
+ phone.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$ git pull
+Already up to date.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Group_29 (main)
+$
